@@ -16,7 +16,6 @@ export const getbookReducers = (state = initialState, action) => {
   switch (action.type) {
     case GET_BOOK_REQUEST:
       return {
-        ...state,
         loading: true,
        
       };

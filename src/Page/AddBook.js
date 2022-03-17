@@ -14,7 +14,6 @@ const AddBook = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch();
     const bookList = useSelector(state=>state.getbookReducers)
-    console.log(bookList,"booklist")
 
 const [disabled, setDisabled] = useState(false)
   const [valueInput, setValueInput] = useState({

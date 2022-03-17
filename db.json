@@ -9,38 +9,8 @@
     {
       "name": "Cesur yeni dunya 2",
       "author": "isaac azimov",
-      "price": "12",
+      "price": "3",
       "id": 2
-    },
-    {
-      "name": "Cesur yeni dunya 6",
-      "author": "isaac azimov",
-      "price": "45",
-      "id": 3
-    },
-    {
-      "name": "Cesur yeni dunya",
-      "author": "isaac azimov",
-      "price": "43",
-      "id": 4
-    },
-    {
-      "name": "Cesur yeni dunya 3",
-      "author": "isaac azimov",
-      "price": "12",
-      "id": 5
-    },
-    {
-      "name": "Ben robot",
-      "author": "isaac azimov",
-      "price": "65",
-      "id": 6
-    },
-    {
-      "name": "Cesur yeni dunya 7",
-      "author": "isaac azimov",
-      "price": "65",
-      "id": 8
     }
   ]
 }
