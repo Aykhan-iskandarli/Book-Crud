@@ -1,0 +1,68 @@
+.sideBar {
+  width: 255px;
+  height: 100vh;
+  background: #363740;
+  .logo-container {
+      display: flex;
+      justify-content: center;
+      a{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+        color: #a4a6b3;
+        opacity: 0.7;
+        display: flex;
+        align-items: center;
+        svg{
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+        }
+      }
+
+  }
+  .navbar {
+      margin-top: 41px;
+    .menuList {
+        margin-top: 63px;
+      li {
+        margin: 5px 0;
+        a {
+          padding-left: 30px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+          color: #a4a6b3;
+          display: flex;
+          align-items: center;
+          height: 56px;
+          transition: all .3s ease;
+          border-left: 3px solid transparent;
+          transition: all .3s ease;
+          &:hover{
+              background: rgba(159, 162, 180, 0.08);
+              border-left: 3px solid #DDE2FF;
+        
+            }
+         
+          svg{
+              margin-right: 24px;
+              width: 25px;
+              height: 25px;
+          }
+        }
+    
+      }
+    }
+  }
+}
+
+
+.active{
+    background: rgba(159, 162, 180, 0.08);
+    border-left: 3px solid #DDE2FF !important;
+  }

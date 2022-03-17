@@ -1,0 +1,29 @@
+.notFound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.notFound-img{
+    width: 600px;
+    height: 400px;
+}
+
+.notFound-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.back-link{
+    background-color: #0083B0;
+    padding: 7px 12px;
+    border-radius: 5px;
+    color: #fff;
+}
+.notFound-text{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,63 @@
+.addBook-section{
+    width: 100%;
+    height: 100%;
+
+    h1{
+        text-align: center;
+    }
+}
+
+.addBook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    .addBooks-img{
+        width:400px ;
+        height: 200px;
+        margin-left: 40px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .form-group{
+        display: flex;
+        align-items: center;
+        margin: 25px 0;
+        label{
+            width: 150px;
+            font-size: 19px;
+           }
+           .form-control{
+            border: 1px solid #acacac;
+            border-radius: 6px;
+            width: 300px;
+            padding: 10px;
+            background-color: rgb(247, 247, 247);
+            &:focus{
+                border: 1px solid #0083B0;
+            }
+        }
+    }
+    .add-btn-div{
+        display: flex;
+        justify-content: flex-end;
+        .add-btn{
+            svg{
+                transform: translateY(-150%);
+                transition: all .3s ease;
+            }
+            &:hover{
+                background-color: #fff;
+                border: 1px solid #0083B0;
+                color: #0083B0;
+                svg{
+                    transform: translateY(0%);
+                }
+            }
+        }
+    }
+    
+}
