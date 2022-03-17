@@ -12,7 +12,6 @@ const Book = () => {
   const dispatch = useDispatch();
   const bookList = useSelector((state) => state.getbookReducers);
   const { loading, books } = bookList;
-  console.log(bookList, "books")
 
   useEffect(() => {
     dispatch(getBookList());
