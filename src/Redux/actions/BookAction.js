@@ -38,7 +38,6 @@ try {
    dispatch({ type: GET_BOOK_REQUEST});
  try {
    const {data}= await axios.put(`http://localhost:5000/data/${id}`,book)
-   console.log(data)
    dispatch({ type: UPDATE_BOOK, payload: data });
  } catch (error) {
   console.log(error,"update error");

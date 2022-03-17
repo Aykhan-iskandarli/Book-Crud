@@ -22,10 +22,11 @@ const Book = () => {
 
   const deleteHandler = (id)=>{
     if(window.confirm("Silmək istədiyinizdən əminsiniz?"))
-     dispatch(deleteBook(id))
+  
     setTimeout(()=>{
       dispatch(getBookList());
     },100)
+    dispatch(deleteBook(id))
     toast.success("Kitab siyahıdan silindi!")
   }
 

@@ -42,7 +42,10 @@ let {id} = useParams()
       e.preventDefault();
       if (!name  || !author || !price) {
         toast.error("Bütün xanalar doldurulmalıdır!")
-      } else {
+        
+      } 
+    
+      else {
         dispatch(updateBook(valueInput,id));
         setDisabled(true)
        setTimeout(() => {
@@ -55,7 +58,7 @@ let {id} = useParams()
   return (
     <div className="addBook-section">
         <ToastContainer autoClose={2000}/>
-      <h1>Kitab Əlavə et</h1>
+      <h1>Kitabı Yenilə</h1>
       <div className="addBook">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
