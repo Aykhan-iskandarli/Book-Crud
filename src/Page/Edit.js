@@ -6,7 +6,7 @@ import { FiSend } from "react-icons/fi";
 import {useNavigate,useParams} from 'react-router-dom';
 import {ToastContainer, toast } from 'react-toastify';
 import { useDispatch,useSelector } from "react-redux";
-import { addBook, getBookList, getSingleBook, updateBook } from "../Redux/actions/BookAction";
+import { getSingleBook, updateBook } from "../Redux/actions/BookAction";
 
 const Edit = () => {
 let {id} = useParams()

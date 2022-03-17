@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
 import { FiSend } from "react-icons/fi";
@@ -6,17 +6,15 @@ import {useNavigate} from 'react-router-dom';
 import Bg from "../assets/images/add_task.svg"
 import {ToastContainer, toast } from 'react-toastify';
 
-import { useDispatch, useSelector } from "react-redux";
-import { addBook, getBookList } from "../Redux/actions/BookAction";
+import { useDispatch } from "react-redux";
+import { addBook } from "../Redux/actions/BookAction";
 
 const AddBook = () => {
-     const [checkName, setCehckName] = useState([])
 
   const navigate = useNavigate()
   const dispatch = useDispatch();
 
-    
-//   const [error, setError] = useState(false);
+
 const [disabled, setDisabled] = useState(false)
   const [valueInput, setValueInput] = useState({
     name: "",
@@ -29,7 +27,6 @@ const [disabled, setDisabled] = useState(false)
     setValueInput({ ...valueInput, [name]: value });
   };
  
-  console.log(checkName,"cehck")
     const handleSubmit = (e) => {
       e.preventDefault();
       if (!name  || !author || !price) {
