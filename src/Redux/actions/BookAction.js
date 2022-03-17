@@ -26,7 +26,7 @@ try {
   export const deleteBook = (id) => async (dispatch) => {
    dispatch({ type: GET_BOOK_REQUEST});
  try {
-   const {data}= await axios.delete(`http://localhost:5000/data/${id}`)
+   const {data}= await axios.delete(`http://localhost:5000/data/${id}`,id)
    dispatch({ type: DELETE_BOOK, payload: data });
  } catch (error) {
    console.log(error);

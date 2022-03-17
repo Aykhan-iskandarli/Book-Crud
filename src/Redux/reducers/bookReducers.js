@@ -28,22 +28,19 @@ export const getbookReducers = (state = initialState, action) => {
     case ADD_BOOK:
       return {
         ...state,
-        books: [ ...state.books, action.payload],
+        books: action.payload,
         loading: false,
       };
     case DELETE_BOOK:
       return {
         ...state,
-        books: action.payload,
+        books: action.payload.id,
         loading: false,
       };
     case UPDATE_BOOK:
       return {
         ...state,
-        books: [
-          state.books.filter(book => book.id !== action.payload.id),
-          action.payload,
-        ],  
+        books: action.payload.id, 
         loading: false,
       };
     case GET_BOOK_SINLGE:

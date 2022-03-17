@@ -25,7 +25,7 @@ const Book = () => {
   
     setTimeout(()=>{
       dispatch(getBookList());
-    },100)
+    },0)
     dispatch(deleteBook(id))
     toast.success("Kitab siyahıdan silindi!")
   }
