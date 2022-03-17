@@ -1,20 +1,22 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
 import { FiSend } from "react-icons/fi";
-import {useNavigate} from 'react-router-dom';
-import Bg from "../assets/images/add_task.svg"
-import {ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
+import Bg from "../assets/images/add_task.svg";
+import { ToastContainer, toast } from "react-toastify";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addBook } from "../Redux/actions/BookAction";
 
 const AddBook = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const dispatch = useDispatch();
-
-const [disabled, setDisabled] = useState(false)
+  const bookList = useSelector((state) => state.getbookReducers);
+  const {  books } = bookList;
+  console.log(books, "book");
+ 
+  const [disabled, setDisabled] = useState(false);
   const [valueInput, setValueInput] = useState({
     name: "",
     author: "",
@@ -25,25 +27,32 @@ const [disabled, setDisabled] = useState(false)
     const { name, value } = e.target;
     setValueInput({ ...valueInput, [name]: value });
   };
- 
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      if (!name  || !author || !price) {
-        toast.error("Bütün xanalar doldurulmalıdır!")
-      } else {
 
-        dispatch(addBook({...valueInput}));
-      setTimeout(() => {
-        navigate('/')
-      }, 3000);
-      setDisabled(true)
-      toast.success("Uğurla əlavə olundu!")
+
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!name || !author || !price) {
+      toast.error("Bütün xanalar doldurulmalıdır!");
+    } 
+    else if( books.find(book=>book.name === name)){
+       
+        toast.error("Ad eyni ola bilməz!");
+    }
+    else {
+        dispatch(addBook({ ...valueInput }));
+        setTimeout(() => {
+          navigate("/");
+        }, 3000);
+        setDisabled(true);
+        toast.success("Uğurla əlavə olundu!");
       
-      }
-    };
+    }
+  };
   return (
     <div className="addBook-section">
-        <ToastContainer autoClose={2000}/>
+      <ToastContainer autoClose={2000} />
       <h1>Kitab Əlavə et</h1>
       <div className="addBook">
         <form onSubmit={handleSubmit}>
@@ -81,7 +90,10 @@ const [disabled, setDisabled] = useState(false)
             />
           </div>
           <div className="add-btn-div">
-            <Button className={disabled ? "add-btn btn-disabled":"add-btn"} disabled={disabled? "disabled":""}>
+            <Button
+              className={disabled ? "add-btn btn-disabled" : "add-btn"}
+              disabled={disabled ? "disabled" : ""}
+            >
               Əlavə et <FiSend />
             </Button>
           </div>

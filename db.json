@@ -3,7 +3,7 @@
     {
       "name": "Ben robot",
       "author": "isaac azimov",
-      "price": "45",
+      "price": "456",
       "id": 1
     },
     {
@@ -11,6 +11,12 @@
       "author": "isaac azimov",
       "price": "3",
       "id": 2
+    },
+    {
+      "name": "Ben robots",
+      "author": "isaac azimov",
+      "price": "89",
+      "id": 3
     }
   ]
 }
