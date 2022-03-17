@@ -6,14 +6,13 @@ import {useNavigate} from 'react-router-dom';
 import Bg from "../assets/images/add_task.svg"
 import {ToastContainer, toast } from 'react-toastify';
 
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addBook } from "../Redux/actions/BookAction";
 
 const AddBook = () => {
 
   const navigate = useNavigate()
   const dispatch = useDispatch();
-    const bookList = useSelector(state=>state.getbookReducers)
 
 const [disabled, setDisabled] = useState(false)
   const [valueInput, setValueInput] = useState({
