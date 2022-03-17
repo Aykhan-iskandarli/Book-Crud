@@ -17,6 +17,12 @@
       "author": "isaac azimov",
       "price": "89",
       "id": 3
+    },
+    {
+      "name": "Ben robotr",
+      "author": "isaac azimov",
+      "price": "65",
+      "id": 4
     }
   ]
 }
