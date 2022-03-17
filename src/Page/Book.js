@@ -34,6 +34,7 @@ const Book = () => {
   }
   return (
     <div className="table-div">
+      <h1>Kitabların Siyahsı</h1>
         <ToastContainer autoClose={1000}/>
       {
         loading ? <Loading/> :

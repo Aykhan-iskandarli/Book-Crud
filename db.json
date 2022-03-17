@@ -1,34 +1,46 @@
 {
   "data": [
     {
-      "name": "Ben robotsssa",
-      "author": "isaac azimovvvvvvvvvvv",
-      "price": "12ss",
-      "id": 9
-    },
-    {
       "name": "Ben robot",
-      "author": "sd",
+      "author": "isaac azimov",
       "price": "45",
-      "id": 13
+      "id": 1
+    },
+    {
+      "name": "Cesur yeni dunya 2",
+      "author": "isaac azimov",
+      "price": "12",
+      "id": 2
+    },
+    {
+      "name": "Cesur yeni dunya 6",
+      "author": "isaac azimov",
+      "price": "45",
+      "id": 3
+    },
+    {
+      "name": "Cesur yeni dunya",
+      "author": "isaac azimov",
+      "price": "43",
+      "id": 4
+    },
+    {
+      "name": "Cesur yeni dunya 3",
+      "author": "isaac azimov",
+      "price": "12",
+      "id": 5
     },
     {
       "name": "Ben robot",
-      "author": "dasdsa",
-      "price": "89",
-      "id": 15
+      "author": "isaac azimov",
+      "price": "65",
+      "id": 6
     },
     {
-      "name": "dsadas",
-      "author": "dasd",
-      "price": "dasda",
-      "id": 21
-    },
-    {
-      "name": "dsa",
-      "author": "das",
-      "price": "das",
-      "id": 22
+      "name": "Cesur yeni dunya 7",
+      "author": "isaac azimov",
+      "price": "65",
+      "id": 8
     }
   ]
 }

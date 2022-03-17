@@ -15,19 +15,20 @@
         background-color: #E5E5E5;
     }
 }
+::-webkit-scrollbar {
+    width: 0px;
 
+  }
 
 .layout{
     display: flex;  
     .main-content{
         padding:0 50px;
-        margin-top: 55px;
+        margin-top: 30px;
         width: 100%;
 
     }
 }
-
-
 
 .input{
     border: none;
@@ -72,51 +73,6 @@
     }
 }
 
-
-
-/* Book */
-.table-div{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-table{
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    background-color: #fff;
-    height:750px !important;
-    display:block;
-    overflow-y:scroll;
-    tbody{
-  
-        td{
-            width: 250px;
-        }
-    }
-}
-
-table,td, th{
-
-    border-bottom: 1px solid rgb(214, 214, 214) ;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 20px ;
-
-}
-
-
-/* scroll */
-
-::-webkit-scrollbar {
-    width: 0px;
-
-  }
-  
- 
-
-
-
-/* Book end*/
 
 .danger-btn{
     background-color: #DC281E;
